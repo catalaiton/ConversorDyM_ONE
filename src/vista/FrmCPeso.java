@@ -21,11 +21,13 @@ public class FrmCPeso extends JFrame {
 	private JComboBox<Object> CmbMedidaFinal;
 	private JButton BtnConvertir;
 	private JTextArea TxaRespuesta;
+	private JButton BtnRegresar;
+	private JButton BtnSalir;
 	
 	
 	public FrmCPeso() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 515, 296);
+		setBounds(100, 100, 515, 324);
 		PanelPeso = new JPanel();
 		PanelPeso.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -66,7 +68,7 @@ public class FrmCPeso extends JFrame {
 		PanelPeso.add(CmbMedidaFinal);
 		
 		BtnConvertir = new JButton("Convertir");
-		BtnConvertir.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+		BtnConvertir.setFont(new Font("Times New Roman", Font.BOLD, 12));
 		BtnConvertir.setBounds(209, 128, 89, 23);
 		PanelPeso.add(BtnConvertir);
 		
@@ -74,6 +76,16 @@ public class FrmCPeso extends JFrame {
 		TxaRespuesta.setFont(new Font("Times New Roman", Font.PLAIN, 13));
 		TxaRespuesta.setBounds(33, 169, 431, 77);
 		PanelPeso.add(TxaRespuesta);
+		
+		BtnRegresar = new JButton("Regresar");
+		BtnRegresar.setFont(new Font("Times New Roman", Font.BOLD, 12));
+		BtnRegresar.setBounds(33, 251, 89, 23);
+		PanelPeso.add(BtnRegresar);
+		
+		BtnSalir = new JButton("Salir");
+		BtnSalir.setFont(new Font("Times New Roman", Font.BOLD, 12));
+		BtnSalir.setBounds(375, 251, 89, 23);
+		PanelPeso.add(BtnSalir);
 		
 		
 	}
@@ -139,6 +151,26 @@ public class FrmCPeso extends JFrame {
 	}
 
 
+	public JButton getBtnRegresar() {
+		return BtnRegresar;
+	}
+
+
+	public void setBtnRegresar(JButton btnRegresar) {
+		BtnRegresar = btnRegresar;
+	}
+
+
+	public JButton getBtnSalir() {
+		return BtnSalir;
+	}
+
+
+	public void setBtnSalir(JButton btnSalir) {
+		BtnSalir = btnSalir;
+	}
+
+	
 	
 
 }

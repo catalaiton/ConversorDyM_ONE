@@ -22,11 +22,13 @@ public class FrmCDivisas extends JFrame {
 	private JButton BtnConvertir;
 	private JTextArea TxaRespuesta;
 	private JLabel lblNewLabel_1;
+	private JButton BtnSalir;
+	private JButton BtnRegresar;
 
 	
 	public FrmCDivisas() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 515, 296);
+		setBounds(100, 100, 515, 324);
 		PanelDivisas = new JPanel();
 		PanelDivisas.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -80,6 +82,16 @@ public class FrmCDivisas extends JFrame {
 		lblNewLabel_1.setFont(new Font("Times New Roman", Font.BOLD, 14));
 		lblNewLabel_1.setBounds(176, 11, 219, 27);
 		PanelDivisas.add(lblNewLabel_1);
+		
+		BtnSalir = new JButton("Salir");
+		BtnSalir.setFont(new Font("Times New Roman", Font.BOLD, 12));
+		BtnSalir.setBounds(380, 257, 89, 23);
+		PanelDivisas.add(BtnSalir);
+		
+		BtnRegresar = new JButton("Regresar");
+		BtnRegresar.setFont(new Font("Times New Roman", Font.BOLD, 12));
+		BtnRegresar.setBounds(36, 257, 89, 23);
+		PanelDivisas.add(BtnRegresar);
 		
 		
 	}
@@ -145,7 +157,24 @@ public class FrmCDivisas extends JFrame {
 	}
 
 
-	
+	public JButton getBtnSalir() {
+		return BtnSalir;
+	}
+
+
+	public void setBtnSalir(JButton btnSalir) {
+		BtnSalir = btnSalir;
+	}
+
+
+	public JButton getBtnRegresar() {
+		return BtnRegresar;
+	}
+
+
+	public void setBtnRegresar(JButton btnRegresar) {
+		BtnRegresar = btnRegresar;
+	}
 	
 	
 }

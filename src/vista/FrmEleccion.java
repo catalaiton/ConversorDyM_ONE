@@ -21,7 +21,7 @@ public class FrmEleccion extends JFrame {
 	
 	public FrmEleccion() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 316, 123);
+		setBounds(100, 100, 316, 137);
 		PanelEleccion = new JPanel();
 		PanelEleccion.setBorder(new EmptyBorder(5, 5, 5, 5));
 
